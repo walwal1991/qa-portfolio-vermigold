@@ -12,7 +12,7 @@
 |---|---|---|---|---|
 | TC-001 | Pass | Logged in directly after sign up; signed in again OK | [form](evidence/TC-001-1-form.png), [result](evidence/TC-001-2-success.png) | |
 | TC-002 |Pass  | Duplicate email rejected with error  |[form](evidence/TC-002-check-same-email.png),[result](evidence/TC-002-pass.png) | |
-| TC-003 | | | | |
+| TC-003 |Pass |Empty fields rejected with errors |[form](evidence/TC-003-leave-req-fields-empty.png),[result](evidence/TC-003-pass.png) | |
 | TC-004 | | | | |
 | TC-005 | | | | |
 | TC-006 | | | | |
