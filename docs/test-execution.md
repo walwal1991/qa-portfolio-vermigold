@@ -15,7 +15,7 @@
 | TC-003 |Pass |Empty fields rejected with errors |[form](evidence/TC-003-leave-req-fields-empty.png),[result](evidence/TC-003-pass.png) | |
 | TC-004 |Pass | correct email and password is logged in  |[form](evidence/TC-004-loggedin-coorect-email-and-pass.png),[result](evidence/TC-004-pass.png) | |
 | TC-005 |Pass | wrong password is rejected |[form](evidence/TC-005-wrong-password.png),[result](evidence/TC-005-pass.png) | |
-| TC-006 | | | | |
+| TC-006 | pass | After signing out, pressing the browser Back button does not display any account pages. The user remains logged out. | [login](evidence/TC-006-log-in-account.png), [signout](evidence/TC-006-sign-out.png),[press-back](evidence/TC-006-customer-account.png) | |
 | TC-007 | | | | |
 | TC-008 | | | | |
 | TC-009 | | | | |
