@@ -1,0 +1,26 @@
+{
+  "name": "qa-portfolio-vermigold",
+  "version": "1.0.0",
+  "description": "QA testing portfolio: test plan, test cases, bug reports, automation",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/walwal1991/qa-portfolio-vermigold.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/walwal1991/qa-portfolio-vermigold/issues"
+  },
+  "homepage": "https://github.com/walwal1991/qa-portfolio-vermigold#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.63.0",
+    "@types/node": "^26.6.4"
+  }
+}
