@@ -46,5 +46,5 @@ Result column: write Pass or Fail after you test each case.
 
 | TC-018 | Sign up (phone) | Enter a valid Algerian number, e.g. 0555123456, then try +213555123456 | Both accepted, or the site clearly says which format to use | Medium | |
 
-| TC-019 | Sign up (phone) | Sign up with a phone number already used by another account | Clear error, no duplicate account | Medium | |
+
 
