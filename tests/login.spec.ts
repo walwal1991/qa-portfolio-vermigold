@@ -1,3 +1,4 @@
+import 'dotenv/config';
 import { test, expect } from '@playwright/test';
 
 test.describe('Login', () => {
@@ -12,12 +13,22 @@ test.describe('Login', () => {
   });
 
   test('TC-005: login fails with a wrong password', async ({ page }) => {
-    await page.getByRole('textbox', { name: 'Email Address' }).fill('jhon@gmail.com');
+    await page.getByRole('textbox', { name: 'Email Address' }).fill('wrong.user@example.com');
     await page.getByRole('textbox', { name: 'Password' }).fill('WrongPassword123');
     await page.locator('form').getByRole('button', { name: 'Login' }).click();
 
-    // Still on the login page and not logged in
     await expect(page).toHaveURL(/customer\/login/);
     await expect(page.locator('form').getByRole('button', { name: 'Login' })).toBeVisible();
+  });
+
+  test('TC-004: login works with a valid account', async ({ page }) => {
+    test.skip(!process.env.TEST_EMAIL, 'Needs TEST_EMAIL and TEST_PASSWORD in .env');
+
+    await page.getByRole('textbox', { name: 'Email Address' }).fill(process.env.TEST_EMAIL!);
+    await page.getByRole('textbox', { name: 'Password' }).fill(process.env.TEST_PASSWORD!);
+    await page.locator('form').getByRole('button', { name: 'Login' }).click();
+
+    // The login form disappears once we are logged in
+    await expect(page.locator('form').getByRole('button', { name: 'Login' })).toBeHidden();
   });
 });
